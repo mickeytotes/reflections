@@ -10,3 +10,6 @@ What happens when you initialize a repository? Why do you need to do it?
 
    - Once you have the file(s) in your working directory, you can run git diff --staged to see the difference(s) between what you have previously committed and what you are about to commit.
 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+ - If you are looking to experiment with completely different versions (maybe something that wouldn't necessarily follow logically from the last version), it might be a good idea to start a new branch. It's almost like splitting it up into new files in a directory. That way you can continue working on different branches/versions simultaneously, and be able to check out your latest versions of each, as well as the history of each.
