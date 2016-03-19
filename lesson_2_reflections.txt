@@ -5,3 +5,8 @@ What happens when you initialize a repository? Why do you need to do it?
  How is the staging area different from the working directory and the repository? What value do you think it offers?
 
   - The staging area is almost a preview mode or go-between for the working directory and the repository. You add files from the working directory into the staging area, then you have the ability to check the status of the file(s) before adding to the repository. A possible value for this could be the ability to double check before committing, as it were. It could act as a fail-safe.
+
+  How can you use the staging area to make sure you have one commit per logical change?
+
+   - Once you have the file(s) in your working directory, you can run git diff --staged to see the difference(s) between what you have previously committed and what you are about to commit.
+
