@@ -2,22 +2,27 @@ What happens when you initialize a repository? Why do you need to do it?
 
  - It creates a hidden directory called .git, which contains all the meta data necessary for your repository. You are essentially creating the shell of your repository so you can start adding commits.
 
- How is the staging area different from the working directory and the repository? What value do you think it offers?
+How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-  - The staging area is almost a preview mode or go-between for the working directory and the repository. You add files from the working directory into the staging area, then you have the ability to check the status of the file(s) before adding to the repository. A possible value for this could be the ability to double check before committing, as it were. It could act as a fail-safe.
+ - The staging area is almost a preview mode or go-between for the working directory and the repository. You add files from the working directory into the staging area, then you have the ability to check the status of the file(s) before adding to the repository. A possible value for this could be the ability to double check before committing, as it were. It could act as a fail-safe.
 
-  How can you use the staging area to make sure you have one commit per logical change?
+How can you use the staging area to make sure you have one commit per logical change?
 
-   - Once you have the file(s) in your working directory, you can run git diff --staged to see the difference(s) between what you have previously committed and what you are about to commit.
+ - Once you have the file(s) in your working directory, you can run git diff --staged to see the difference(s) between what you have previously committed and what you are about to commit.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
  - If you are looking to experiment with completely different versions (maybe something that wouldn't necessarily follow logically from the last version), it might be a good idea to start a new branch. It's almost like splitting it up into new files in a directory. That way you can continue working on different branches/versions simultaneously, and be able to check out your latest versions of each, as well as the history of each.
 
- How do the diagrams help you visualize the branch structure?
+How do the diagrams help you visualize the branch structure?
 
-  - Things can get pretty complicated if you're keeping the structure up in your head and trying to visualize where everything is. If you want to be navigating between commits on different branches, it helps to know exactly where on the structure you are coming from, and where exactly you're heading.
+ - Things can get pretty complicated if you're keeping the structure up in your head and trying to visualize where everything is. If you want to be navigating between commits on different branches, it helps to know exactly where on the structure you are coming from, and where exactly you're heading.
 
-  What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-   - You are taking all the commits from both branches and bringing the information together, incorporating changes from both. You are actually merging one branch into the other, which keeps the name of the latter. You can still track all the commits from both branches, but in git log they are weaved together into one branch. It is easier to see the history of the changes in the diagram by showing exactly where they merge.
+ - You are taking all the commits from both branches and bringing the information together, incorporating changes from both. You are actually merging one branch into the other, which keeps the name of the latter. You can still track all the commits from both branches, but in git log they are weaved together into one branch. It is easier to see the history of the changes in the diagram by showing exactly where they merge.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+ - If all merges were automatic, it would mean quicker merges because it is all automated, but you run the risk of making a buggy commit. If all merges had to be manual, that would be much more time consuming, always checking to make sure there are no conflicts, and even if there weren't any, having to take that extra step. However, you would be able to catch any and all potential conflicts.
+
