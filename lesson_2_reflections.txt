@@ -13,3 +13,7 @@ What happens when you initialize a repository? Why do you need to do it?
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
  - If you are looking to experiment with completely different versions (maybe something that wouldn't necessarily follow logically from the last version), it might be a good idea to start a new branch. It's almost like splitting it up into new files in a directory. That way you can continue working on different branches/versions simultaneously, and be able to check out your latest versions of each, as well as the history of each.
+
+ How do the diagrams help you visualize the branch structure?
+
+  - Things can get pretty complicated if you're keeping the structure up in your head and trying to visualize where everything is. If you want to be navigating between commits on different branches, it helps to know exactly where on the structure you are coming from, and where exactly you're heading.
