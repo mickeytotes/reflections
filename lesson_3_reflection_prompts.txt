@@ -1,3 +1,7 @@
 When would you want to use a local repository, rather than keeping all your work local?
 
  - One reason would be to give yourself the ability to do your work from any computer. Another reason would be to have multiple people working on the same project, from different locations. In both cases, all versions of all the files would be available to anyone, anywhere.
+
+ Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+  - If you have multiple people working on one project, the changes they've made may interact with the changes you've made in an unhelpful way. It is more helpful to see the changes made first, then decide if they work with what you have, or if you need to consult with the person who made the changes.
